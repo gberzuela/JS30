@@ -11,4 +11,4 @@ Just a personal log containing what I learned throughout the challenge.
 
 # Table of Contents
 
-1. ## [https://github.com/gberzuela/JS30/tree/main/01-JS%20Drum%20Kit]JavaScript Drum Kit
+1. [https://github.com/gberzuela/JS30/tree/main/01-JS%20Drum%20Kit](JavaScript Drum Kit)
