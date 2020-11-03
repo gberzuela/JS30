@@ -12,3 +12,4 @@ Just a personal log containing what I learned throughout the challenge.
 # Table of Contents
 
 1. []JavaScript Drum Kit
+   -
