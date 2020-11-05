@@ -42,13 +42,13 @@ body {
 	top: 50%;
 	transform-origin: 100%;
 	transform: rotate(90deg);
-	transition: all 0.5sec;
+	transition: all 0.5s;
 }
 
-.hour-hand {
+/* .hour-hand {
 	width: 25%;
 	height: 6px;
 	background: black;
 	position: absolute;
 	top: 50%;
-}
+} */
