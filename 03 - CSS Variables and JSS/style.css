@@ -1,0 +1,38 @@
+/* 
+- declaring css variables on some element (root (highest order element) in this case) 
+- we need to use the double dash, --, in order to declare css variables
+*/
+:root {
+	--blur: 10px;
+	--spacing: 10px;
+	--base: #ffb7c5;
+}
+
+img {
+	padding: var(--spacing);
+	filter: blur(var(--blur));
+	background: var(--base);
+}
+
+/* change anything with the hl, highlight, class */
+.hl {
+	color: var(--base);
+}
+
+/* misc styles, nothing to do with CSS variables */
+body {
+	text-align: center;
+	background: #193549;
+	color: white;
+	font-family: "Courier New", Courier, monospace, sans-serif;
+	font-weight: lighter;
+	font-size: 50px;
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100px;
+}
