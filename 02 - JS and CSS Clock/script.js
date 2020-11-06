@@ -6,16 +6,16 @@ function setDate() {
     const current = new Date();
 
     const seconds = current.getSeconds();
-    const secondsDegrees = ( (seconds / 60) * 360) + 90;
-    secondsHand.style.transform = `rotate(${secondsDegrees})`
+    const secondsDegrees = 8 * seconds + 90;
+    secondsHand.style.transform = `rotate(${secondsDegrees}deg)`
 
     const minutes = current.getMinutes();
-    const minutesDegrees = ( (minutes / 60) * 360) + 90;
-    minutesHand.style.transform = `rotate(${minutesDegrees})`;
+    const minutesDegrees = 6 * minutes + 90;
+    minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
     const hours = current.getHours();
-    const hoursDegrees = ( (hours / 12) * 360) + 90;
-    hoursHand.style.transform = `rotate(${hoursDegrees})`;
+    const hoursDegrees = 30 * hours + 90;
+    hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
 
 setInterval(setDate, 1000);
