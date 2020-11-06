@@ -6,19 +6,21 @@ function playSound(event) {
     const key = document.querySelector(`.key[data-key='${event.keyCode}']`);
     // Only attempt to play a sound if we specified an element with the given data-key attribute
     if (audio) {
-        audio.currentTime = 0;
-        audio.play();
-        // Add the string to the class list so we know when to transform/reverse
-        key.classList.add('playing');
+        play(audio, key);
     }
 }
 
-function buttonClicked(key) {
+function buttonClicked() {
     // we access this.dataset.key because we are using the data-* attribute
     const audio = document.querySelector(`audio[data-key='${this.dataset.key}']`);
+    play(audio, this)
+}
+
+function play(audio, key) {
     audio.currentTime = 0;
     audio.play();
-    this.classList.add('playing');
+    // Add the string to the class list so we know when to transform/reverse
+    key.classList.add('playing');
 }
 
 function removeTransition(event) {
